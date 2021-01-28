@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'first-app';
+  toggleDetails:boolean;
+
+  constructor(){
+    this.toggleDetails=false;
+  }
+
+  onToggledDetails(show:boolean){
+    this.toggleDetails=show;
+  }
 }
